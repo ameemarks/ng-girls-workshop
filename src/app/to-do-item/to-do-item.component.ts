@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {TodoItemInterface} from '../interfaces/todo-item';
+import {TodoItemInterface} from '../interfaces/todo-item-interface';
 
 @Component({
   selector: 'app-to-do-item',

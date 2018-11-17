@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {TodoItemInterface} from './interfaces/todo-item';
+import {TodoItemInterface} from './interfaces/todo-item-interface';
 
 @Component({
   selector: 'app-root',
@@ -16,4 +16,8 @@ export class AppComponent {
     {title: 'develop app'},
     {title: 'deploy app'},
   ];
+
+  addItem(title) {
+    this.todoList.push({ title });
+  }
 }
